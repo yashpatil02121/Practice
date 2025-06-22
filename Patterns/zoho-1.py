@@ -23,3 +23,22 @@ for i in range(n):
             ascending = True
         x+=n+1
     print("")
+
+
+n = 4 
+x = 1
+
+for i in range(n):
+    print(" "*(n-i)*2,end="")
+    row = []
+
+    for j in range(n):
+        row.append(x)
+        x += 1
+
+    if i%2 != 0:
+        row.reverse()
+
+    for num in row:
+        print(num," ", end="")
+    print("")
